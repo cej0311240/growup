@@ -12,15 +12,15 @@ const Home = () => {
         <nav className="navbar">
           <div className="logo">Choi-eunji</div>
           <ul className="menu">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><Link to="/" className="menu-link">Home</Link></li>
+            <li><Link to="/about" className="menu-link">About</Link></li>
+            <li><Link to="/skills" className="menu-link">Skills</Link></li>
+            <li><Link to="/projects" className="menu-link">Projects</Link></li>
+            <li><Link to="/contact" className="menu-link">Contact</Link></li>
           </ul>
           <div className="nav-icon">
             <img src={homeIcon} alt="icon" className="header-icon"/>
-          </div>
+          </div>s
         </nav>
       </div>
 

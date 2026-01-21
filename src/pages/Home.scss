@@ -24,6 +24,10 @@
       z-index: 20;
       cursor: pointer;
         li{
+            .menu-link{
+                color: #5A6962;
+                text-decoration: none;
+            }
             &:hover{
                 color: #043006;
                 font-weight: bold;

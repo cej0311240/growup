@@ -22,7 +22,13 @@
       box-shadow: 1px 3px 6px #5A6962;
       position: relative;
       z-index: 20;
-
+      cursor: pointer;
+        li{
+            &:hover{
+                color: #043006;
+                font-weight: bold;
+            }
+        }
       .logo { cursor: pointer; }
       .menu { display: flex; gap: 5rem; }
       .nav-icon img { width: 50px; }
@@ -31,6 +37,18 @@
 
   .bg-swing {
     position: relative;
+    p{
+      position: absolute; 
+      color: #043006;
+      top: 7.2%;           
+      left: 15.6%;
+      font-weight:800;
+      font-size: 1.3rem;
+      &:hover{
+        color: #1221fa;
+        font-weight: bolder;
+      }
+    }
     .bg {
       display: block;
       z-index: 1; 

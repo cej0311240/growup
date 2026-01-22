@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-
   .top {
     width: 100%;
 
@@ -23,16 +22,18 @@
       position: relative;
       z-index: 20;
       cursor: pointer;
-        li{
-            .menu-link{
-                color: #5A6962;
-                text-decoration: none;
-            }
-            &:hover{
-                color: #043006;
-                font-weight: bold;
-            }
+
+      li {
+        .menu-link {
+          color: #5A6962;
+          text-decoration: none;
         }
+        &:hover {
+          color: #043006;
+          font-weight: bold;
+        }
+      }
+
       .logo { cursor: pointer; }
       .menu { display: flex; gap: 5rem; }
       .nav-icon img { width: 50px; }
@@ -41,38 +42,62 @@
 
   .bg-swing {
     position: relative;
-    p{
+
+    p {
       position: absolute; 
       color: #043006;
-      top: 7.2%;           
+      top: 7.5%;           
       left: 15.6%;
-      font-weight:800;
+      font-weight: 800;
       font-size: 1.3rem;
-      &:hover{
+
+      &:hover {
         color: #1221fa;
         font-weight: bolder;
       }
     }
+
     .bg {
       display: block;
-      z-index: 1; 
+      z-index: 1;
+      width: 100%;
     }
 
-    .top-swing {
-      position: absolute; 
-      top: 19%;           
-      left: 84%;          
-      transform: translateX(-50%);
-      width: 15%;       
-      z-index: 10;        
+    // .top-swing {
+    //   position: absolute;
+    //   top: 19%;
+    //   left: 84%;
+    //   transform: translateX(-50%);
+    //   width: 15%;
+    //   z-index: 10;
 
-      // 선택: 흔들리는 애니메이션
-      animation: swing 2s infinite ease-in-out;
-      @keyframes swing {
-        0% { transform: translateX(-50%) rotate(-10deg); }
-        50% { transform: translateX(-50%) rotate(10deg); }
-        100% { transform: translateX(-50%) rotate(-10deg); }
-      }
-    }
+    //   animation: swing 2s infinite ease-in-out;
+
+    //   @keyframes swing {
+    //     0% { transform: translateX(-50%) rotate(-10deg); }
+    //     50% { transform: translateX(-50%) rotate(10deg); }
+    //     100% { transform: translateX(-50%) rotate(-10deg); }
+    //   }
+    // }
+
+    // 🔹 gimg 슬라이드용 스타일
+.gimg {
+
+  .g {
+    width: 25%;
+    position: absolute;
+    bottom: 60.1%;
+    left: 37.2%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: 1;
+  }
+
+  .g:first-child {
+    opacity: 1;
+  }
+}
   }
 }

@@ -4,7 +4,6 @@ import About from "./pages/About";
 import PersonalProject from "./pages/PersonalProject";
 import TeamProject from "./pages/TeamProject";
 import Why from "./pages/Why";
-import Skills from "./pages/Skills";
 import "./assets/scss/global.scss"
 const Navigation = () => {
   const navigate = useNavigate();
@@ -30,7 +29,6 @@ const App = () => {
         <Route path="/personal" element={<PersonalProject />} />
         <Route path="/team" element={<TeamProject />} />
         <Route path="/why" element={<Why />} />
-        <Route path="/skills" element={<Skills />} />
       </Routes>
     </HashRouter>
   );

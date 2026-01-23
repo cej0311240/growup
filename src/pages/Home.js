@@ -4,6 +4,7 @@ import mainbg from "../assets/images/main-bg.png";
 import g1 from "../assets/images/g-1.png"; 
 import g2 from "../assets/images/g-2.png"; 
 import g3 from "../assets/images/g-3.png"; 
+import r from "../assets/images/rain.gif"; 
 import tool1 from "../assets/images/tool (1).png"; 
 import tool2 from "../assets/images/tool (2).png"; 
 import tool3 from "../assets/images/tool (3).png"; 
@@ -86,6 +87,7 @@ const Home = () => {
           <p>디자인 선정 이유→</p>
         </Link>
         <img src={mainbg} alt="bg" className="bg"/>
+        <img src={r} alt="bg" className="rain"/>
 
         {/* 🔹 gimg 자동 슬라이드 */}
         <div className="gimg" ref={gimgRef}>
@@ -106,6 +108,10 @@ const Home = () => {
               <img key={idx} src={tool} alt={`tool-${idx}`} className="tool-menu"/>
             ))}
           </div>
+        </div>
+        <div className="project-v">
+          <p>보러가기→</p>
+          <p>보러가기→</p>
         </div>
       </div>
     </div>

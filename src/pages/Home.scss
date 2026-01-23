@@ -47,7 +47,7 @@
     p {
       position: absolute; 
       color: #043006;
-      top: 7.5%;           
+      top: 8%;           
       left: 15.6%;
       font-weight: 800;
       font-size: 1.3rem;
@@ -63,31 +63,21 @@
       z-index: 1;
       width: 100%;
     }
-
-    // .top-swing {
-    //   position: absolute;
-    //   top: 19%;
-    //   left: 84%;
-    //   transform: translateX(-50%);
-    //   width: 15%;
-    //   z-index: 10;
-
-    //   animation: swing 2s infinite ease-in-out;
-
-    //   @keyframes swing {
-    //     0% { transform: translateX(-50%) rotate(-10deg); }
-    //     50% { transform: translateX(-50%) rotate(10deg); }
-    //     100% { transform: translateX(-50%) rotate(-10deg); }
-    //   }
-    // }
-
+    .rain{
+      // width: 60px;
+      position: absolute;
+      top:3%;
+      left: 34%;
+      width: 15%;
+      z-index: 10;
+    }
     // 🔹 gimg 슬라이드용 스타일
   .gimg {
 
   .g {
     width: 25%;
     position: absolute;
-    bottom: 60.1%;
+    bottom: 57%;
     left: 37.2%;
     border-radius: 50%;
     background-color: #fff;
@@ -102,7 +92,7 @@
     .my{
       width: 25%;
       position: absolute;
-      bottom: 57%;
+      bottom: 53%;
       left:42.6%;
       border-radius: 50%;
       z-index: 1;
@@ -120,7 +110,7 @@
   }
 .tool {
   position: absolute;  
-  top: 50%;           
+  top: 53%;           
   left: 0;
   width: 100%;
 
@@ -148,5 +138,29 @@
     }
   }
 }
+  }
+  .project-v{
+
+  p{
+      background-color: #ffffffa1;
+      padding:0.5rem 2rem;
+      border-radius: 3rem;
+      box-shadow: 1px 3px 7px #5A6962;
+        &:hover{
+          background-color: #6C927F;
+          color: #fff;
+        }
+    font-size: 30px;
+    &:nth-child(1){
+         position: absolute;  
+  top: 74%;           
+  left: 34%;
+    }
+    &:nth-child(2){
+         position: absolute;  
+  top: 88.4%;           
+  left: 34%;
+    }
+  }
   }
 }
